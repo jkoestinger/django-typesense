@@ -47,4 +47,4 @@ class TypeSenseTestCase(TestCase):
             ],
             "name": "customfieldsmockmodel",
         }
-        self.assertDictEqual(m._get_schema(), expected)
+        self.assertDictEqual(m._get_typesense_schema(), expected)
