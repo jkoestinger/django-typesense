@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  typesense:
+    image: typesense
+    ports:
+    - "8108:8108"
+
+    command: '--api-key test-key'
