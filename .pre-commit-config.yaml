@@ -9,6 +9,10 @@ repos:
     rev: 19.3b0
     hooks:
     -   id: black
+-   repo: https://github.com/pycqa/flake8
+    rev: 3.9.1
+    hooks:
+    -   id: flake8
 -   repo: local
     hooks:
     - id: update-requirements-txt

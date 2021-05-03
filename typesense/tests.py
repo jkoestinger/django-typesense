@@ -1,3 +1,6 @@
 from django.test import TestCase
 
-# Create your tests here.
+
+class TypeSenseTestCase(TestCase):
+    def test_dummy(self):
+        pass

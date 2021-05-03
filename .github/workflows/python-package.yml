@@ -31,9 +31,12 @@ jobs:
     - name: Check import order with Isort
       run: |
         isort --check-only .
+    - name: Lint with Flake8
+      run: |
+        flake8 . --count --show-source --statistics --exit-zero
     - name: Lint with Black
       run: |
-        black .
+        black --check .
     - name: Test with pytest
       run: |
         pytest
